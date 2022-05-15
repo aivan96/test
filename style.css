@@ -56,7 +56,7 @@ input[name="s"]{
 .slider-nav-item{
     width: 60px;
     height: 15px;
-    border: 2px solid #BDAE82;;
+    border: 2px solid #BDAE82;
     margin: 7px;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -88,10 +88,6 @@ input[name="s"]{
     color: #BDAE82;
 }
 
-:checked{
-    color:#BDAE82;
-}
-
 #s1:checked ~ .s1{
     margin-left: 0;
 }
@@ -105,5 +101,37 @@ input[name="s"]{
 }
 
 #s4:checked ~ .s1{
+    margin-left: -75%;
+}
+
+#s1:checked ~ .slider-nav .r1{
+    background-color: #BDAE82;
+}
+
+#s2:checked ~ .slider-nav .r2{
+    background-color: #BDAE82;
+}
+
+#s3:checked ~ .slider-nav .r3{
+    background-color: #BDAE82;
+}
+
+#s4:checked ~ .slider-nav .r4{
+    background-color: #BDAE82;
+}
+
+#s1:checked ~ .slider-text .d1{
+    margin-left: 0;
+}
+
+#s2:checked ~ .slider-text .d1{
+    margin-left: -25%;
+}
+
+#s3:checked ~ .slider-text .d1{
+    margin-left: -50%;
+}
+
+#s4:checked ~ .slider-text .d1{
     margin-left: -75%;
 }
